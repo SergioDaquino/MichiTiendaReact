@@ -1,26 +1,15 @@
-MichiTienda - React (Vite) conversion
--------------------------------------
+MichiTienda - Version React
 
-Esta es una conversión automática del proyecto original (HTML/CSS/JS) a una
-aplicación React basada en Vite.
+Esta es una version de un proyecto original (HTML/JS) hecha para el curso previo a este, mas adelante espero alimentar la pagina con mi propia api de git, de momento no me dio tiempo y tome datos de una api comentada mas abajo.
 
-Requerimientos implementados (resumen):
-- Carrito con useState y contexto (CartContext) + persistencia en localStorage.
-- Listado de productos (Home) que consume https://fakestoreapi.com/products con manejo de carga y errores (useEffect).
-- Páginas: Inicio (catalogo), Producto (ruta dinámica /producto/:id), Carrito, Nosotros.
-- Rutas protegidas: /checkout solo accesible si el usuario está "logueado" (mock) — login via Navbar.
-- Componentes reutilizables (ProductCard, Navbar, ProtectedRoute).
-- Uso de useState, useEffect, react-router-dom.
+Requerimientos:
+*Carrito con useState y contexto (CartContext) + persistencia en localStorage.
+*Listado de productos (Home) que toma datos de: https://fakestoreapi.com/products con manejo de errores (useEffect).
+*Paginas: Inicio (catalogo), Producto (ruta dinámica /producto/:id), Carrito, Nosotros.
+*Rutas protegidas: /checkout solo es accesible si el usuario está "logueado" (solo de prueba) — logueo desde Navbar.
+*Componentes reutilizables (ProductCard, Navbar, ProtectedRoute).
+*Uso de useState, useEffect, react-router-dom.
 
-Cómo usar:
-1) En tu máquina, con Node.js instalado:
-   npm install
-   npm run dev
-
-2) Abre http://localhost:5173
-
-Notas:
-- Se usan imágenes copiadas desde el proyecto original en public/img (si existían).
-- La autenticación es simulada: presiona "Entrar" en la navbar para poder acceder a /checkout.
-- Puedes cambiar la API en src/pages/Home.jsx y src/pages/ProductPage.jsx.
+Esta es la tienda original, la idea seria expandirla y mejorarla mediante react, es para referencia.
+https://sergiodaquino.github.io/MichiTienda
 
